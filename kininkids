@@ -1,0 +1,56 @@
+Sure! Here's an example of a Java code for a children's store called "KininKids":
+
+```java
+public class KininKids {
+    private String storeName;
+    private int numberOfItems;
+    private boolean isOnlineStore;
+    
+    public KininKids(String storeName, int numberOfItems, boolean isOnlineStore) {
+        this.storeName = storeName;
+        this.numberOfItems = numberOfItems;
+        this.isOnlineStore = isOnlineStore;
+    }
+    
+    public String getStoreName() {
+        return storeName;
+    }
+    
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
+    
+    public int getNumberOfItems() {
+        return numberOfItems;
+    }
+    
+    public void setNumberOfItems(int numberOfItems) {
+        this.numberOfItems = numberOfItems;
+    }
+    
+    public boolean isOnlineStore() {
+        return isOnlineStore;
+    }
+    
+    public void setOnlineStore(boolean isOnlineStore) {
+        this.isOnlineStore = isOnlineStore;
+    }
+    
+    public void displayStoreInfo() {
+        System.out.println("Store Name: " + storeName);
+        System.out.println("Number of Items: " + numberOfItems);
+        System.out.println("Online Store: " + isOnlineStore);
+    }
+    
+    public static void main(String[] args) {
+        KininKids kininKids = new KininKids("KininKids", 1000, true);
+        kininKids.displayStoreInfo();
+    }
+}
+```
+
+In this code, we have a `KininKids` class that represents the children's store. It has attributes like `storeName` (name of the store), `numberOfItems` (number of items in the store), and `isOnlineStore` (whether the store is online or not). The class also has getter and setter methods for these attributes.
+
+The `displayStoreInfo()` method is used to display the information about the store. In the `main()` method, we create an instance of the `KininKids` class and call `displayStoreInfo()` to print the store's information.
+
+You can modify this code to add more functionalities and attributes as needed for your children's store.
